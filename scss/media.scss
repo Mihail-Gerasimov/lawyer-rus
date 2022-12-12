@@ -10,6 +10,10 @@
     .specialists__main--card::after {
         right: -71px;
     }
+
+    .main {
+        background-size: 100% 4420px;
+    }
 }
 
 @media (max-width: 1440px) {
@@ -61,9 +65,17 @@
     .specialists__main--card::after {
         right: -31px;
     }
+
+    .main {
+        background-size: 100% 4307px;
+    }
 }
 
 @media (max-width: 1200px) {
+    .main {
+        background-size: 100% 4009px;
+    }
+
     .header__main h1 {
         font-size: 46px;
         line-height: 56px;
@@ -87,9 +99,36 @@
         font-size: 14px;
         line-height: 21px;
     }
+
+    .specialists__main--card {
+        max-width: 300px;
+    }
+
+    .specialists__main--card::after {
+        right: -22px;
+    }
+
+    .specialists__main--card h4 {
+        font-size: 23px;
+        line-height: 27px;
+    }
+
+    .specialists__main--card p {
+        font-size: 12px;
+        line-height: 17px;
+    }
+
+    .specialists__main--card span {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
 }
 
 @media (max-width: 991px) {
+    .main {
+        background-size: 100% 6140px;
+    }
 
     .header__main h1 {
         font-size: 40px;
@@ -117,6 +156,47 @@
 
     .services__main--card::after {
         right: -14px;
+    }
+
+    .specialists__main--card {
+        margin-bottom: 60px;
+        max-width: 340px;
+
+        &::before {
+            bottom: -34px;
+        }
+
+        &::after {
+            display: none;
+        }
+    }
+
+    .specialists__main--card h4 {
+        font-size: 25px;
+        line-height: 29px;
+    }
+
+    .specialists__main--card p {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .specialists__main--card span {
+        font-size: 14px;
+        line-height: 19px;
+        padding: 7px 4px;
+    }
+
+    .specialists__main div:last-child .specialists__main--card:last-child {
+        margin: 0;
+
+        &::before {
+            display: none;
+        }
+    }
+
+    .specialists__main div:last-child .specialists__main--card::before {
+        display: table;
     }
 
     .btn {
@@ -164,6 +244,12 @@
 }
 
 @media (max-width: 767px) {
+    .main {
+        background-size: contain;
+        background-image: url(../img/column-fonM.png);
+        background-position: right;
+    }
+
     .header {
         margin: 35px 0 70px;
     }
@@ -220,6 +306,11 @@
         margin-bottom: 40px;
     }
 
+    .title span {
+        font-size: 23px;
+        line-height: 29px;
+    }
+
     .services {
         margin-bottom: 70px;
     }
@@ -237,9 +328,44 @@
         margin-bottom: 70px;
     }
 
+    .specialists {
+        margin-bottom: 70px;
+    }
+
+    .form {
+        margin-bottom: 50px;
+    }
+
     .footer p {
         font-size: 12px;
         line-height: 14px;
+    }
+
+    .thanks {
+        max-width: 280px;
+        min-height: 340px;
+
+        .icon {
+            max-width: 80px;
+        }
+
+        h4 {
+            font-size: 24px;
+            line-height: 29px;
+            margin: 0;
+
+            span {
+                font-size: 16px;
+                line-height: 19px;
+                max-width: 200px;
+            }
+        }
+    }
+
+    .thanks .closed {
+        top: 25px;
+        right: 25px;
+        max-width: 25px;
     }
 }
 
@@ -247,6 +373,11 @@
     .title {
         font-size: 28px;
         line-height: 38px;
+    }
+
+    .title span {
+        font-size: 20px;
+        line-height: 24px;
     }
 
     .header__main h1 {

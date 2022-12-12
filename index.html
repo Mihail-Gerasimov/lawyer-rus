@@ -62,7 +62,7 @@
         </div>
     </nav>
 
-    <main>
+    <main class="main position-relative">
         <header class="header">
             <div class="container">
                 <div
@@ -165,7 +165,7 @@
                 <div class="specialists__main d-flex flex-column">
 
                     <div
-                        class="d-flex justify-content-between align-items-center align-items-md-start flex-column flex-md-row mb-0 mb-md-5">
+                        class="d-flex justify-content-between align-items-center align-items-lg-start flex-column flex-lg-row mb-0 mb-lg-5">
                         <div class="specialists__main--card d-flex flex-column align-items-center text-center">
                             <h4 class="mb-3">Иванов
                                 Николай Владимирович</h4>
@@ -207,7 +207,7 @@
                     </div>
 
                     <div
-                        class="d-flex justify-content-between align-items-center align-items-md-start flex-column flex-md-row">
+                        class="d-flex justify-content-between align-items-center align-items-lg-start flex-column flex-lg-row">
                         <div class="specialists__main--card d-flex flex-column align-items-center text-center">
                             <h4 class="mb-3">Давыдов
                                 Тимур Владиславович</h4>
@@ -255,15 +255,42 @@
             </div>
         </section>
 
-        <footer class="footer p-4">
-            <p class="mx-auto text-center">
-                © 2022 ЮРИДИЧЕСКИЙ ЦЕНТР ПРАВОВОЙ ПОДДЕРЖКИ НАСЕЛЕНИЯ<br>
-                ООО «ЮРИДИЧЕСКИЙ ЦЕНТР ПРАВОВОЙ ПОДДЕРЖКИ НАСЕЛЕНИЯ»<br>
-                ОГРН: 1220200036066 ИНН: 0276971803450053,<br>
-                РОССИЯ, РЕСП. БАШКОРТОСТАН, ГОРОД УФА Г.О., УФА Г., УФА Г., ОКТЯБРЯ ПР-КТ, Д. 132/3, ОФИС 407
-            </p>
-        </footer>
+        <section class="form">
+            <div class="container">
+                <h4 class="title">Оставьте заявку на бесплатную консультацию <span>С вами свяжутся наши
+                        специалисты</span></h4>
+
+                <div class="form__main d-flex justify-content-center justify-content-lg-between align-items-end">
+                    <form class="w-100" action="">
+                        <input type="text" placeholder="Ваше имя" class="input mb-4">
+                        <input type="text" placeholder="Ваш телефон" class="input mb-4">
+                        <textarea placeholder="Коротко опишите вашу проблему (необязательно)"
+                            class="input input-comment mb-4" name="" id="" cols="30" rows="5"></textarea>
+
+                        <button class="btn mb-2">Оставить заявку</button>
+
+                        <p class="text-center">Нажимая на кнопку, вы даете согласие на обработку
+                            персональных данных</p>
+                    </form>
+
+                    <img class="scales d-none d-lg-block" src="./img/scales.png" alt="">
+
+                </div>
+            </div>
+        </section>
+
+        <!-- <img class="left" src="./img/column.png" alt="">
+        <img class="right" src="./img/column.png" alt=""> -->
     </main>
+
+    <footer class="footer p-4">
+        <p class="mx-auto text-center">
+            © 2022 ЮРИДИЧЕСКИЙ ЦЕНТР ПРАВОВОЙ ПОДДЕРЖКИ НАСЕЛЕНИЯ<br>
+            ООО «ЮРИДИЧЕСКИЙ ЦЕНТР ПРАВОВОЙ ПОДДЕРЖКИ НАСЕЛЕНИЯ»<br>
+            ОГРН: 1220200036066 ИНН: 0276971803450053,<br>
+            РОССИЯ, РЕСП. БАШКОРТОСТАН, ГОРОД УФА Г.О., УФА Г., УФА Г., ОКТЯБРЯ ПР-КТ, Д. 132/3, ОФИС 407
+        </p>
+    </footer>
 
     <!-- modal -->
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
@@ -286,6 +313,15 @@
                     на обработку персональных данных</p>
             </div>
         </div>
+    </div>
+
+    <div class="thanks justify-content-center d-flex flex-column align-items-center position-fixed">
+        <img class="closed" src="./img/close.svg" alt="">
+
+        <img class="icon mb-4" src="./img/thanks.svg" alt="колокольчик">
+
+        <h4 class="title">Заявка отправлена <span>Мы получили вашу заявку. <br>
+                Наш юрист свяжется с вами</span></h4>
     </div>
 
     <!-- bootstrap -->
