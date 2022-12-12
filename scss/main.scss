@@ -1,0 +1,266 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    line-height: 100%;
+    font-weight: 400;
+
+    color: #292626;
+
+    background-color: #FFFFFF;
+}
+
+
+a {
+    text-decoration: none;
+
+    &:hover {
+        cursor: pointer !important;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+input,
+button {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+
+    border: none;
+    outline: none;
+    cursor: pointer !important;
+}
+
+input {
+    font-weight: 400 !important;
+    color: rgba(41, 38, 38, 0.5) !important;
+
+    &:hover {
+        cursor: pointer !important;
+        border: 0;
+        outline: none;
+    }
+
+    &::before {
+        cursor: pointer !important;
+        box-shadow: none !important;
+        border: none;
+        outline: none;
+    }
+}
+
+button {
+    font-weight: 900 !important;
+    color: #FFFFFF !important;
+    border: none !important;
+
+    &:hover {
+        cursor: pointer !important;
+        border: none !important;
+        outline: none;
+    }
+
+    &::before {
+        cursor: pointer !important;
+        box-shadow: none !important;
+        border: none;
+        outline: none;
+    }
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1600px;
+    padding: 0 5px;
+}
+
+@media (max-width: 1600px) {
+    .container {
+        max-width: 1440px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 991px;
+    }
+}
+
+@media (max-width: 991px) {
+    .container {
+        max-width: 767px;
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        max-width: 575px;
+    }
+}
+
+@media (max-width: 575px) {
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+}
+
+header,
+main,
+section,
+footer,
+nav {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.title {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    color: #442E19;
+    margin-bottom: 60px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    span {
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 38px;
+        color: #292626;
+        margin-top: 10px;
+    }
+}
+
+.btn {
+    font-size: 20px;
+    line-height: 24px;
+    padding: 18px 0;
+    background-color: #1C7B37;
+    box-shadow: 0px 2px 4px rgba(10, 44, 19, 0.4);
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+}
+
+.input {
+    padding: 18px 0 18px 20px;
+    font-size: 20px;
+    line-height: 24px;
+    border: 1px solid #442E19;
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+    max-width: 520px;
+
+    &:hover {
+        border: 1px solid #442E19;
+    }
+}
+
+/* base */
+
+// nav
+
+.nav {
+    background-color: rgba(41, 38, 38, 0.2);
+    box-shadow: 0px 2px 4px rgba(29, 27, 27, 0.35);
+
+    &__main {
+
+        div>span {
+            color: #442E19;
+            font-size: 24px;
+            line-height: 24px;
+            font-weight: 900;
+        }
+
+        button {
+            max-width: 340px;
+        }
+    }
+}
+
+// modal
+.modal-dialog {
+    max-width: 790px;
+}
+
+.modal-content {
+    padding: 135px 0;
+    position: relative;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(11, 31, 51, 0.25);
+    border-radius: 10px;
+
+    p {
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        opacity: 0.5;
+    }
+}
+
+.btn-close {
+    position: absolute;
+    padding: 0;
+    right: 35px;
+    top: 35px;
+    background-size: 30px 30px;
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+}
+
+.modal-from {
+    max-width: 520px;
+    margin: 0 auto;
+    width: 100%;
+}

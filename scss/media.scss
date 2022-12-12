@@ -1,0 +1,68 @@
+@media (max-width: 1600px) {}
+
+@media (max-width: 1440px) {}
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 991px) {
+
+    .btn {
+        font-size: 18px;
+        line-height: 20px;
+        padding: 14px 0;
+    }
+
+    .input {
+        padding: 15px 0 15px 20px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .modal-dialog {
+        max-width: 280px;
+    }
+
+    .modal-content {
+        padding: 80px 20px;
+
+        h4 {
+            font-size: 24px;
+            line-height: 29px;
+
+            span {
+                font-size: 16px;
+                line-height: 19px;
+            }
+        }
+    }
+
+    .modal-content p {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .btn-close {
+        right: 20px;
+        top: 20px;
+        background-size: 25px 25px;
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media (max-width: 767px) {}
+
+@media (max-width: 575px) {
+    .modal-dialog {
+        margin: 1.75rem auto;
+    }
+
+    .nav__main div>img {
+        width: 45px;
+    }
+
+    .nav__main div>span {
+        font-size: 18px;
+        line-height: 20px;
+    }
+}
